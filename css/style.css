@@ -1,0 +1,106 @@
+/*** Reset ***/
+*{box-sizing: border-box;}
+body{margin:0;font-family:'Montserrat', sans-serif;font-size:16px;;color:#000;}
+img{max-width:100%;}
+a{text-decoration:none;color:inherit;}
+h1,h2,h3{margin:0;}
+figure{margin:0;}
+
+/*** Helper ***/
+.flex{display:flex; flex-wrap: wrap;}
+.text-center{text-align:center;}
+.text-left{text-align:left;}
+.text-right{text-align:right;}
+
+/*** Grid ***/
+.container{max-width:960px;margin:0 auto;padding:0 15px;}
+.row{display:flex; flex-wrap: wrap; margin:0 -15px;}
+.col{padding:0 15px;min-height:1px;}
+.col1{width:8.333%;}
+.col2{width:16.667%;}
+.col3{width:25%;}
+.col4{width:33.333%;}
+.col5{width:41.667%;}
+.col6{width:50%;}
+.col7{width:58.33%;}
+.col8{width:66.667%;}
+.col9{width:75%;}
+.col10{width:83.333%;}
+.col11{width:91.667%;}
+.col12{width:100%;}
+
+/*** Header ***/
+.main-header{position:fixed;top:0;left:0;width:100%;padding:1em 0;z-index:99;transition:0.3s;}
+.white-header{background:rgba(255,255,255,0.9);box-shadow:0 0 5px rgba(0,0,0,0.3);}
+.main-header h1{cursor:pointer;}
+.main-header img{display:block;}
+.main-menu a{margin:0 0.5em;font-weight:bold;transition:0.3s;line-height:1.5em;}
+.header-icons a{margin-left:0.5em;transition:0.3s;line-height:1.5em;}
+
+
+/*** Home **/
+.home{position:relative;background:#f4f4f4;overflow:hidden;}
+.home .container{position:relative;height:100vh;background:url(../img/intro.png) no-repeat left center;background-size:auto 100%;}
+.home header{position:absolute;width:50%;right:0;top:50%;transform:translateY(-50%);}
+.home h2{font-size:5em;line-height:0.8em;text-transform:uppercase;}
+.home h2:after{content:'';display:block;height:3px;background:#fe3e6b;width:1em;margin-top:0.2em;}
+
+/*** Sections ***/
+.page-section{padding:5em 0;background:#FFF;min-height:100vh;}
+.grey-section{background:#f4f4f4;}
+.section-header{margin-bottom:3em;}
+.section-header h2{font-size:3em;}
+.section-header h2:after{content:'';display:block;height:3px;background:#fe3e6b;width:2em;margin:0.2em auto 0 auto;}
+
+/*** Portfolio ***/
+.work{position:relative;overflow:hidden;}
+.work-thumbs img{display:block;float:left;width:33.33%;cursor:pointer;}
+#work-window{position:absolute;top:0;left:-100%;width:100%;z-index:1;transition:0.5s;}
+#work-image{width:100%;}
+#work-close{position:absolute;z-index:2;top:0.5em;right:0.7em;font-size:2.5em;cursor:pointer;}
+
+/*** Blog ***/
+.posts-container{position:relative;height:280px;overflow:hidden;}
+.blog-post{position:absolute;width:100%;left:100%;background:#FFF;}
+.blog-post:first-child{left:0;}
+.blog-post header{padding:2em;}
+.blog-post h3{font-size:1.5em;}
+.blog-post h3:after{content:'';display:block;height:3px;background:#fe3e6b;width:2em;margin-top:0.2em;}
+.blog-post img{display:block;}
+.blog-post a{display:inline-block;background:#fe3e6b;padding:0.5em 1em;color:#FFF;}
+
+.blog-button{display:inline-block;width:15px;height:15px;background:#BBB;border-radius:50%;margin:1em 10px;cursor:pointer;}
+.active-button{background:#fe3e6b;}
+
+/*** Pricing ***/
+.prices-container{position:relative;}
+
+.price-box{box-shadow:0 0 5px rgba(0,0,0,0.3);background:#FFF;padding:1em;transition:0.5s;opacity:0;}
+.price-box h3{font-size:2em;color:#fe3e6b;}
+.price-box h4{font-size:3em;margin:0.2em 0 0 0;line-height:1em;color:#333;}
+.price-details{margin-top:1em;line-height:1.5em;}
+.best-offer{font-size:1.5em;margin-top:1em;display:none;}
+
+.best-price{background:#fe3e6b;color:#FFF;}
+.best-price h3{color:#FFF;}
+.best-price .best-offer{display:block;}
+
+#budget-form{position:absolute;width:100%;height:100%;padding:2em;background:#FFF;text-align:center;z-index:1;}
+#price-input{width:80%;margin-left:10%;display:block;padding:0.5em;font-size:1.5em;border:none;background:#F4F4F4;text-align:center;color:#666;}
+#budget-form input[type="submit"]{display:inline-block;background:#fe3e6b;color:#FFF;padding:0.5em 1em;border:none;font-size:1.5em;margin-top:1em;}
+
+/*** Contacts ***/
+.contacts-container{background:#f4f4f4;position:relative;}
+.contacts-map{position:relative;width:50%;}
+.contacts-map i{position:absolute;font-size:2em;z-index:1;cursor:pointer;color:#000;}
+.contacts-map i.active-marker{color:#fe3e6b;}
+#office1{top:30%;left:30%;}
+#office2{top:70%;left:45%;}
+#office3{top:45%;left:70%;}
+.contacts-content{width:50%;float:right;padding:2em;}
+.contact-text{display:none;font-size:1.5em;}
+.contact-text h3{color:#fe3e6b;}
+.contact-text:first-child{display:block;}
+
+/*** Footer ***/
+.main-footer{padding:2em 0; border-top:1px solid #CCC;}
